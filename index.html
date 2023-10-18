@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Tube Tooling</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        }
+        @font-face {
+            font-family: "Open Sans";
+            src: url("./fonts/OpenSansVariable.ttf");
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .conDiv{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            width: 100%;
+            height: 100%;
+        }
+        .conDiv h1{
+            letter-spacing: 1.3px;
+            font-size: 45px;
+            font-weight:400;
+        }
+        #dropTimer{
+            font-size: 25px;
+            font-weight: 400;
+            transition: all 2s linear;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="conDiv">
+        <h1>Coming Soon</h1>
+        <img src="./CTTLogoLinkedIn.jpeg" />
+        <p id="dropTimer" style="opacity: 0;">00:00:00</p>
+    </div>
+
+    <script>
+        debugger;
+        var timer = document.getElementById('dropTimer');
+        var countDownDate = new Date("Dec 1, 2023").getTime();
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            timer.innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                timer.innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+        function fadeInTimer(){
+            timer.style.opacity = '1';
+        }
+
+        setTimeout(fadeInTimer, 1200);
+    </script>
+</body>
+</html>
