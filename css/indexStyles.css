@@ -1,0 +1,453 @@
+section {
+  width: 90%;
+}
+
+main {
+  position: relative;
+}
+
+.soloLogo {
+  position: absolute;
+  top: 10px;
+  right: CALC(50% - 96px);
+  width: 193px;
+  height: 167px;
+  z-index: 2000000;
+}
+
+.homeSection {
+  height: 700px;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100% !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.imgScrollDiv {
+  height: 600px;
+  width: 600px;
+  /* background-color: RGBA(0, 0, 0, 0.2); */
+  overflow-x: hidden;
+}
+
+.scroller {
+  width: 300%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  transition: 1.3s ease-in-out;
+}
+
+.carImg {
+  width: 600px;
+  height: 600px;
+}
+
+.titleDiv {
+  height: 600px;
+  width: 800px;
+  /* background-color: orange; */
+  justify-content: flex-end;
+  align-items: start;
+}
+
+.titleSpan,
+.titleDescSpan,
+.btnQuote1 {
+  margin-left: 20px;
+}
+
+.titleSpan {
+  width: 760px;
+  height: 168px;
+  font-size: 90px;
+  line-height: 71.5px;
+  font-weight: 900;
+}
+
+.titleDescSpan {
+  width: 712px;
+  height: 161px;
+  font-size: 20px;
+  line-height: 36.5px;
+  font-weight: 400;
+}
+
+.btnQuote1 {
+  width: 234px;
+  height: 42px;
+  text-align: center;
+  background-color: #d9d9d9;
+  justify-content: center;
+  align-items: center;
+  border-radius: 21px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.btnQuote1:hover {
+  background-color: #1d9add;
+  color: #ffffff;
+}
+
+.gifHolder {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: -25px;
+}
+
+.logoHorz {
+  position: absolute;
+  right: 40px;
+  top: 5px;
+}
+
+.whatWeDoSection {
+  height: 774px;
+  /* background-color: RGBA(0, 0, 0, 0.2); */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  padding-top: 25px;
+}
+
+.secSuper {
+  color: #17aae9;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  font-size: 20px;
+  line-height: 36.5px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.secTitle {
+  color: #000;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 36.5px;
+  height: 50px;
+}
+
+.servicesSpan {
+  margin: 80px 0 120px 0;
+  width: 1224px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servicesCard {
+  justify-content: start;
+  align-items: start;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  width: 390px;
+  height: 386px;
+  margin: 0px 18px 10px 18px;
+  padding-left: 28px;
+  padding-top: 28px;
+  background-color: #ffffff;
+}
+
+.wwdIcon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.wwdTitle {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 36.5px;
+  height: 40px;
+  overflow-y: hidden;
+}
+
+.wwdDiv {
+  margin-bottom: 8px;
+  background-color: #1d9add;
+  width: 90px;
+  height: 3px;
+}
+
+.wwdBody {
+  line-height: 18px;
+  width: 80%;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.handImg {
+  display: none;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 20px;
+  bottom: 20px;
+}
+
+.addServicesSpan {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.visionHistoryContainer {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer !important;
+  width: 200vw;
+  height: 90vh;
+  min-height: 750px;
+  margin-bottom: 150px;
+}
+
+.visionDiv {
+  background-position: 0 80% !important;
+  background: url(../img/ctt-7edited.png), lightgray 50% / cover no-repeat;
+}
+
+.historyDiv {
+  background-position: 100% 60% !important;
+  background: url(../img/ctt-10edited.png), lightgray 50% / cover no-repeat;
+}
+
+.vhd {
+  transform: translate3d(0, 0, 1px);
+  backface-visibility: hidden;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.vhdHead,
+.vhdBody {
+  color: #ffffff;
+}
+
+.vhdHead {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 70px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  width: 600px;
+  margin-left: 175px;
+  margin-bottom: 30px;
+  /* line-height: 18px; */
+}
+
+.vhdBody {
+  /* font-family: Helvetica, sans-serif; */
+  font-size: 30px;
+  letter-spacing: 0.7px;
+  /* font-weight: 200; */
+  width: 750px;
+  margin-left: 180px;
+  line-height: 49px;
+}
+
+.rArr,
+.lArr {
+  display: block;
+  z-index: 10;
+}
+
+.rArr {
+  right: 10px;
+}
+
+.lArr {
+  left: 10px;
+}
+
+.logoImg {
+  left: calc(50% - 46px);
+  bottom: 30px;
+}
+
+.whyChooseUs {
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.whyUsGrid {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 1440px;
+}
+
+.gridSlot {
+  min-width: 165px;
+  height: 300px;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge {
+  border-radius: 75px;
+  width: 156px;
+  height: 156px;
+  /* background-color: #ffffff; */
+  background-color: #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  justify-content: center;
+  align-items: center;
+}
+
+.badgeImg {
+  width: 112px;
+  height: 112px;
+}
+
+.badgeText {
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 36px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 490px) {
+  .soloLogo,
+  .addServicesSpan,
+  .visionHistoryContainer,
+  .whyChooseUs,
+  .gifHolder,
+  .bigGif,
+  .logoHorz {
+    display: none !important;
+  }
+
+  .homeSection {
+    height: unset;
+    flex-direction: column-reverse;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: none;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .titleDiv {
+    width: 100%;
+    height: unset;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titleSpan,
+  .titleDescSpan {
+    margin: 0;
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  .titleSpan {
+    height: 75px;
+    font-size: 36px;
+    line-height: 32px;
+    margin-bottom: 4px;
+  }
+
+  .titleDescSpan {
+    height: unset;
+    font-size: 10px;
+    line-height: 23px;
+    padding-right: 36px;
+    margin-bottom: 4px;
+    overflow-y: hidden;
+  }
+
+  .btnQuote1 {
+    width: 193px;
+    height: 36px;
+    border-radius: 18px;
+    font-size: 10px;
+    line-height: normal;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .imgScrollDiv {
+    margin: 0;
+    width: 100%;
+    height: 100vw;
+  }
+
+  .carImg {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .whatWeDoSection {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: unset;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .servicesSpan {
+    position: static;
+    width: 100%;
+    height: 400px;
+    overflow-x: hidden;
+    margin: 0 0;
+  }
+
+  .servicesCard {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    height: 400px;
+    box-shadow: none;
+    padding-left: 30px;
+    transition: all 0.6s ease;
+  }
+
+  .secTitle,
+  .secSuper {
+    margin-left: 30px;
+  }
+
+  .secTitle {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36.5px;
+    margin-bottom: 10px;
+  }
+
+  .secSuper {
+    font-size: 12px;
+    line-height: 28px;
+  }
+
+  .wwdDiv {
+    margin-bottom: 12px;
+  }
+
+  .handImg {
+    display: block;
+  }
+}
+/* MOBILE */

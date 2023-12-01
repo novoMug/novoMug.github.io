@@ -1,0 +1,394 @@
+/* TODO: Figure out font, too thick to look like draft, + no commercial license */
+@font-face {
+  /* font-family: Provicali; */
+  /* src: url("../font/provicali/Provicali.otf") format("opentype"); */
+
+  font-family: "AHG";
+  src: url("../font/Alte Haas Grotesk/AlteHaasGroteskRegular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "AHG";
+  src: url("../font/Alte Haas Grotesk/AlteHaasGroteskBold.ttf")
+    format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../font/DM Sans/DMSans-VariableFont.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../font/DM Sans/DMSans-Italic-VariableFont.ttf") format("truetype");
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Provicali", sans-serif; */
+  font-family: "DM Sans";
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  width: 100vw;
+  /* height: 100vh; */
+}
+
+img,
+span {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#overLoad {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed;
+  z-index: 2000022;
+  background-color: #ffffff;
+  transition: opacity 0.75s ease-in;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* height: 100%; */
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.overlay {
+  overflow-x: hidden;
+  width: 100vw;
+  /* min-height: 1000px !important; */
+  height: 1000px;
+  z-index: 100000;
+  position: fixed;
+  left: 100vw;
+  top: 0;
+  transition: 0.6s all ease-in-out;
+  background: linear-gradient(
+    180deg,
+    rgba(41, 226, 238, 0.9) 0.52%,
+    #1d9add 45.83%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: none !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.xHolder {
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLinks {
+  text-align: right;
+  margin-right: 30px;
+  height: 240px !important;
+  display: block;
+}
+
+.mnuLink {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff !important;
+  letter-spacing: 0.7px;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mnuImg {
+  transform: translateY(3px);
+}
+
+/* HEADER */
+header {
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 12px;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 120;
+  position: fixed;
+  overflow: hidden !important;
+}
+
+.logoLink {
+  margin-top: 4px;
+  margin-left: 20px;
+}
+
+.headNavLinks {
+  width: 403px;
+  align-items: flex-start;
+  gap: 47px;
+  list-style: none;
+  display: inline;
+  margin-right: 40px;
+}
+
+.headNav a {
+  width: 100%;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+  /* TODO: Update Font for this */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  letter-spacing: 0.7px;
+  transition: all 0.15s ease-in;
+  cursor: pointer;
+}
+
+.headNav a:hover {
+  color: #1d9add;
+}
+
+.mobileLogo {
+  display: none;
+}
+
+.hamburgerMenu {
+  display: none;
+  width: 25px;
+  height: 25px;
+  margin-right: 40px;
+}
+
+/* HEADER */
+
+/* MAIN */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.companySpan {
+  display: none;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+/* MAIN */
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 200px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding-top: 33px; */
+}
+
+.footLeft,
+.footRight,
+.footMid {
+  height: 110px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footMid {
+  margin: 0 26px;
+}
+
+.footTitle {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  height: 16px;
+  line-height: 12.5px;
+  margin-bottom: 4px;
+}
+
+.footText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12px;
+  height: 16px;
+  margin: 4px 0;
+}
+
+.footTitle,
+.footText {
+  color: #1d9add !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FOOTER */
+
+/* MOBILE */
+@media screen and (max-width: 490px) {
+  .logoLink,
+  .headNavLinks {
+    display: none !important;
+  }
+
+  header {
+    height: 101px;
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    justify-content: space-between;
+    z-index: 1000010 !important;
+  }
+
+  .mobileLogo {
+    display: block;
+    width: 76px;
+    height: 66px;
+    margin-left: 36px;
+  }
+
+  .hamburgerMenu {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+
+  main {
+    margin-top: 101px;
+  }
+
+  .sectionTitle {
+    width: 80%;
+    margin: -20px 0 0 25px;
+    font-size: 36px;
+    font-weight: 800;
+  }
+
+  footer {
+    justify-content: center;
+    align-items: unset;
+    padding-top: 30px;
+  }
+
+  .footLeft {
+    width: 100%;
+    height: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .footLeft img {
+    width: 113px;
+    height: 25px;
+    transform: translateX(-68px);
+  }
+
+  .footMid,
+  .footRight {
+    width: 120px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footText,
+  .footTitle {
+    font-size: 8px;
+    margin-bottom: 0;
+  }
+
+  .overlay {
+    display: flex !important;
+    flex-direction: column;
+    z-index: 1000012;
+  }
+
+  .companySpan {
+    display: block;
+    width: 100%;
+    color: #1d9add;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 8px;
+  }
+}
+/* MOBILE */
+
+/* LAYOUT CLASSES */
+.fr {
+  display: flex;
+  flex-direction: row;
+}
+
+.fc {
+  display: flex;
+  flex-direction: column;
+}
+
+.db {
+  display: block;
+}
+
+.dg {
+  display: grid;
+}
+
+.pa {
+  position: absolute;
+}
+
+.bgRed {
+  background-color: red;
+}
+
+.bgBlue {
+  background-color: blue;
+}
+
+.bgGreen {
+  background-color: green;
+}
+
+.aRmvDef {
+  text-decoration: none;
+  color: unset;
+}
+
+.mz {
+  margin: 0;
+}
+
+.pz {
+  padding: 0;
+}
+/* LAYOUT CLASSES */

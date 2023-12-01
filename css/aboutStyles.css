@@ -1,0 +1,113 @@
+.companySpan {
+  display: block;
+  width: 100%;
+  color: #1d9add;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  font-size: 8px;
+  font-weight: 400px;
+}
+
+.sectionTitle {
+  width: 80%;
+  margin: -20px 0 0 25px;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.aboutUsSection {
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.visionHistoryHolder {
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: unset;
+}
+
+.badge {
+  border-radius: 57px;
+  width: 115px;
+  height: 115px;
+  background-color: #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  justify-content: center;
+  align-items: center;
+  margin: 36px 4px 4px 4px;
+  overflow: visible;
+}
+
+.badgeImg {
+  width: 65px;
+  height: 65px;
+}
+
+.vhTitle,
+.vhText {
+  margin-top: 15px;
+}
+
+.vhTitle {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.vhText {
+  display: block;
+  width: calc(100% - 60px);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 230% */
+}
+
+.whyChooseUsSection {
+  width: 100%;
+}
+
+.secSuper,
+.secSub {
+  margin-left: 30px;
+}
+
+.secSuper {
+  color: #1d9add;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.secSub {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.whyUsLine {
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.whyUsIcon {
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+}
+
+.whyUsText {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 320px) {
+  .whyUsLine {
+    margin-left: 30px;
+  }
+}

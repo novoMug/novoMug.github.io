@@ -1,0 +1,174 @@
+header {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  justify-content: space-between;
+}
+
+.mapDiv,
+.contactDiv {
+  width: 100%;
+}
+
+.mapDiv {
+  z-index: 2;
+  height: 410px;
+}
+
+.lowerContent {
+  justify-content: center;
+  align-items: center;
+}
+
+.shopImgDiv {
+  display: none;
+  width: 670px;
+  height: 330px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.shopImg {
+  width: 100%;
+}
+
+.contactDiv {
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 4;
+  height: 620px;
+  margin-top: -120px;
+  background-color: transparent;
+}
+
+.contactGradient {
+  background: linear-gradient(180deg, rgba(255, 248, 248, 0) 0%, #fff 67.24%);
+  height: 120px;
+  width: 100%;
+}
+
+.contactInfo {
+  background-color: #ffffff;
+  height: 500px;
+  width: unset;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.infoHolder {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 90px;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+}
+
+.sectionTitle {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.connectWith {
+  width: 340px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 30px;
+}
+
+.separator {
+  width: 340px;
+  height: 1px;
+  background-color: #000000;
+}
+
+.cardInfo {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.cardLine {
+  width: 400px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+
+.cardIcon {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+}
+
+.cardText {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* MOBILE */
+@media screen and (max-width: 490px) {
+  .shopImgDiv,
+  .shopImg {
+    display: none;
+  }
+
+  .contactGradient {
+    background: linear-gradient(180deg, rgba(255, 248, 248, 0) 0%, #fff 67.24%);
+  }
+
+  .contactDiv {
+    height: unset !important;
+  }
+
+  .contactInfo {
+    margin-top: -10px;
+    height: unset;
+  }
+
+  .companySpan {
+    margin-left: 25px !important;
+  }
+
+  .connectWith {
+    width: 80%;
+    margin: 0 0 10px 25px;
+    height: 55px;
+    font-size: 10px;
+    line-height: 19px;
+  }
+
+  .infoHolder {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 70px;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .cardInfo {
+    flex-direction: column !important;
+    width: 100%;
+    height: unset !important;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .cardLine {
+    margin: 5px 0;
+    width: unset;
+  }
+
+  .cardText {
+    font-size: 8px;
+  }
+
+  .cardIcon {
+    margin-right: 15px;
+    margin-left: 50px;
+    width: 20px;
+    height: 20px;
+  }
+}
+/* MOBILE */
