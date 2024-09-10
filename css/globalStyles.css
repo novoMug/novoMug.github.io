@@ -1,26 +1,20 @@
 /* TODO: Figure out font, too thick to look like draft, + no commercial license */
 @font-face {
-  /* font-family: Provicali; */
-  /* src: url("../font/provicali/Provicali.otf") format("opentype"); */
-
   font-family: "AHG";
   src: url("../font/Alte Haas Grotesk/AlteHaasGroteskRegular.ttf")
     format("truetype");
 }
-
 @font-face {
   font-family: "AHG";
   src: url("../font/Alte Haas Grotesk/AlteHaasGroteskBold.ttf")
     format("truetype");
   font-weight: bold;
 }
-
 @font-face {
   font-family: "DM Sans";
   src: url("../font/DM Sans/DMSans-VariableFont.ttf") format("truetype");
   font-style: normal;
 }
-
 @font-face {
   font-family: "DM Sans";
   src: url("../font/DM Sans/DMSans-Italic-VariableFont.ttf") format("truetype");
@@ -253,6 +247,24 @@ footer {
 
 /* FOOTER */
 
+@media screen and (max-width: 1100px){
+  header{
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .headNavLinks{
+    margin:0;
+    padding:0;
+  }
+
+  .logoLink{
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
 /* MOBILE */
 @media screen and (max-width: 490px) {
   .logoLink,
@@ -265,7 +277,7 @@ footer {
     width: 100%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background-color: #ffffff;
-    justify-content: space-between;
+    justify-content: space-between !important;
     z-index: 1000010 !important;
   }
 
