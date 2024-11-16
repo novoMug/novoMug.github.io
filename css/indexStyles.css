@@ -377,6 +377,38 @@ main {
   section{
     width: 100%;
   }
+
+  .vhd{
+    height: auto;
+    width: 100%;
+  }
+  .vhdHead{
+    font-size: 60px;
+    margin-bottom: 25px;
+  }
+  .vhdBody{
+    font-size: 25px;
+    line-height: 35px;
+    max-width: 70%;
+  }
+  .vhdHead,
+  .vhdBody{
+    margin-left: 100px;
+  }
+
+  .servicesSpan{
+    width: 100%;
+    height: auto;
+  }
+
+  .wwdTitle{
+    width: auto;
+    height: auto;
+  }
+
+  .servicesCard{
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 1100px){
@@ -447,6 +479,25 @@ main {
     width: 200px;
     font-size: 14px;
   }
+
+  .visionHistoryContainer{
+    display:none;
+  }
+
+  .servicesSpan{
+    width: 100%;
+    height: auto;
+  }
+
+  .wwdTitle{
+    width: auto;
+    height: auto;
+    font-size: 
+  }
+
+  .servicesCard{
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 776px){
@@ -476,11 +527,31 @@ main {
     height: 104px;
     right: CALC(50% - 52px);
   }
+
+  .vhd{
+    height: auto;
+    width: 100%;
+  }
+  .vhdHead{
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .vhdBody{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .vhdHead,
+  .vhdBody{
+    margin-left: 25px;
+  }
 }
 
 @media screen and (max-width: 734px){
   .imgScrollDiv {
     display:none;
+  }
+  .bigGif{
+    margin-top: 50px;
   }
   .homeSection{
     height: auto;
@@ -568,7 +639,7 @@ main {
     padding-right: 36px;
     margin-bottom: 4px;
     overflow-y: hidden;
-    text-align: left;;
+    text-align: left;
   }
 
   .btnQuote1 {
