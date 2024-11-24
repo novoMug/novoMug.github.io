@@ -265,6 +265,14 @@ footer {
   }
 }
 
+@media screen and (max-width: 776px) {
+  .footText,
+  .footTitle {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+}
+
 /* MOBILE */
 @media screen and (max-width: 490px) {
   .logoLink,
